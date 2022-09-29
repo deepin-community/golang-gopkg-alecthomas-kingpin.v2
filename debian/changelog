@@ -1,0 +1,88 @@
+golang-gopkg-alecthomas-kingpin.v2 (2.2.6-3) unstable; urgency=medium
+
+  * Team upload.
+  * Add missing Break & Replaces on
+    golang-gopkg-alecthomas-kingpin.v3-dev (Closes: #985319)
+
+ -- Aloïs Micard <alois@micard.lu>  Tue, 04 May 2021 09:18:02 +0200
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.6-2) unstable; urgency=medium
+
+  [ Martín Ferrari ]
+  * debian/control: Add myself to Uploaders.
+  * debian/control: Bump Standards-Version (no changes).
+  * Bump debhelper compat level to 11.
+
+  [ Debian Janitor (Jelmer Vernooĳ) ]
+  * Bump debhelper from old 11 to 12.
+    Fixes: lintian: package-uses-old-debhelper-compat-version
+  * Set debhelper-compat version in Build-Depends.
+    Fixes: lintian: uses-debhelper-compat-file
+  * Set upstream metadata fields:
+    Bug-Database, Bug-Submit, Repository, Repository-Browse.
+    Fixes: lintian: upstream-metadata-file-is-missing
+    Fixes: lintian: upstream-metadata-missing-bug-tracking
+    Fixes: lintian: upstream-metadata-missing-repository
+
+  [ Anthony Fok ]
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+  * Bump Standards-Version to 4.5.0 (no change)
+  * Add "Rules-Requires-Root: no" to debian/control
+  * Add github.com/alecthomas/kingpin to XS-Go-Import-Path
+  * debian/links: Add usr/share/gocode/src/github.com/alecthomas/kingpin
+    as a symlink to usr/share/gocode/src/gopkg.in/alecthomas/kingpin.v2
+  * debian/rules: Set "DH_GOLANG_EXCLUDES_ALL := 0" after bumping
+    debhelper-compat level to ensure cmd.go is installed
+  * Add myself to the list of Uploaders
+
+ -- Anthony Fok <foka@debian.org>  Thu, 29 Oct 2020 12:40:27 -0600
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.6-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Martín Ferrari ]
+  * New upstream release
+  * Stop using pristine-tar.
+  * Refresh patches.
+  * Automated cme fixes.
+
+ -- Martín Ferrari <tincho@debian.org>  Thu, 24 May 2018 04:34:13 +0000
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.3-2) unstable; urgency=medium
+
+  * Bump debhelper compat level to 10
+  * Build-depend on golang-any instead of golang-go
+  * Drop dependency on golang-go from -dev package
+  * Update debian/watch to use package name for tarball
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 19 Nov 2016 23:25:22 -0500
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.3-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove Built-Using field from -dev package
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 04 Sep 2016 00:08:59 -0400
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.2-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Peter Colberg <peter@colberg.org>  Sat, 30 Jul 2016 23:35:36 -0400
+
+golang-gopkg-alecthomas-kingpin.v2 (2.2.0-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Peter Colberg <peter@colberg.org>  Sun, 17 Jul 2016 16:13:57 -0400
+
+golang-gopkg-alecthomas-kingpin.v2 (2.1.11-1) unstable; urgency=medium
+
+  * Initial release (Closes: #817103)
+
+ -- Peter Colberg <peter@colberg.org>  Tue, 08 Mar 2016 20:39:29 -0500
